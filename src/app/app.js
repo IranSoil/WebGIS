@@ -62,6 +62,9 @@ var app = new gxp.Viewer({
     }, {
         ptype: "gxp_navigationhistory",
         actionTarget: "map.tbar"
+    }, {
+        ptype: "gxp_zoomtolayerextent",
+        actionTarget: ["tree.tbar", "tree.contextMenu"]
     }],
 
     // layer sources
