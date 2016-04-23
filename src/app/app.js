@@ -1,24 +1,24 @@
 /**
  * Add all your dependencies here.
- *
- * @require widgets/Viewer.js
- * @require plugins/LayerTree.js
- * @require plugins/OLSource.js
- * @require plugins/OSMSource.js
- * @require plugins/WMSCSource.js
- * @require plugins/ZoomToExtent.js
- * @require plugins/NavigationHistory.js
- * @require plugins/Zoom.js
- * @require plugins/AddLayers.js
- * @require plugins/RemoveLayer.js
- * @require RowExpander.js
  */
+@require widgets/Viewer.js
+@require plugins/LayerTree.js
+@require plugins/OLSource.js
+@require plugins/OSMSource.js
+@require plugins/WMSCSource.js
+@require plugins/ZoomToExtent.js
+@require plugins/NavigationHistory.js
+@require plugins/Zoom.js
+@require plugins/AddLayers.js
+@require plugins/RemoveLayer.js
+@require RowExpander.js
+
 
 var app = new gxp.Viewer({
     portalConfig: {
         layout: "border",
         region: "center",
-        
+
         // by configuring items here, we don't need to configure portalItems
         // and save a wrapping container
         items: [{
@@ -37,7 +37,7 @@ var app = new gxp.Viewer({
         }],
         bbar: {id: "mybbar"}
     },
-    
+
     // configuration of all tool plugins for this application
     tools: [{
         ptype: "gxp_layertree",
@@ -63,7 +63,7 @@ var app = new gxp.Viewer({
         ptype: "gxp_navigationhistory",
         actionTarget: "map.tbar"
     }],
-    
+
     // layer sources
     sources: {
         local: {
@@ -75,7 +75,7 @@ var app = new gxp.Viewer({
             ptype: "gxp_osmsource"
         }
     },
-    
+
     // map and layers
     map: {
         id: "mymap", // id needed to reference map in portalConfig above
